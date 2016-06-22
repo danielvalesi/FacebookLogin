@@ -1,8 +1,10 @@
 <?php
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'username');    // DB username
-define('DB_PASSWORD', 'password');    // DB password
-define('DB_DATABASE', 'database');      // DB name
-$connection = mysql_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD) or die( "Unable to connect");
-$database = mysql_select_db(DB_DATABASE) or die( "Unable to select database");
+
+define('DB_SERVER', 'mysql.hostinger.com.br');
+define('DB_USERNAME', 'u636977446_an');    // DB username
+define('DB_PASSWORD', 'dleite');    // DB password
+define('DB_DATABASE', 'u636977446_an');      // DB name
+//$con = mysqli_connect("localhost","my_user","my_password","my_db");
+$connection = mysqli_connect('mysql.hostinger.com.br', 'u636977446_an', 'dleite') or die( "Unable to connect");
+$database = mysqli_select_db($connection, 'u636977446_an') or die( "Unable to select database");
 ?>
